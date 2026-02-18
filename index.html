@@ -17,7 +17,7 @@ body {
 }
 
 .card {
-  max-width: 400px;
+  max-width: 380px;
   margin: auto;
   background: #ffffff;
   padding: 35px 25px;
@@ -26,13 +26,13 @@ body {
 }
 
 .logo {
-  max-width: 220px;
+  max-width: 200px;
   margin-bottom: 20px;
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin: 15px auto;
@@ -42,56 +42,47 @@ body {
 
 h1 {
   margin: 10px 0 5px 0;
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 .subtitle {
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
   color: #666;
   font-size: 1em;
 }
 
-/* BOTONES */
+/* BOTONES 3D */
 .contact-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border-radius: 10px;
+  gap: 8px;
+  padding: 10px 18px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #f2f2f2, #dcdcdc);
+  color: #000;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 0.95em;
   font-weight: 600;
-  transition: all 0.25s ease;
-}
-
-/* Botón Email */
-.email-btn {
-  background-color: #2c3e50;
-  color: white;
-}
-
-.email-btn:hover {
-  background-color: #1a252f;
-  transform: translateY(-2px);
-}
-
-/* Botón WhatsApp */
-.whatsapp-btn {
-  background-color: #25D366;
-  color: white;
-}
-
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-  transform: translateY(-2px);
+  border: 1px solid #cfcfcf;
+  box-shadow: 
+    0 4px 0 #b5b5b5,
+    0 6px 10px rgba(0,0,0,0.08);
+  transition: all 0.15s ease-in-out;
 }
 
 .contact-button img {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Efecto al presionar */
+.contact-button:active {
+  transform: translateY(4px);
+  box-shadow: 
+    0 1px 0 #b5b5b5,
+    0 3px 6px rgba(0,0,0,0.1);
 }
 
 /* LinkedIn */
@@ -100,8 +91,8 @@ h1 {
 }
 
 .linkedin img {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   transition: transform 0.2s ease;
 }
 
@@ -128,12 +119,14 @@ h1 {
   <p class="subtitle">Key Account Manager</p>
 
   <!-- Botón Email -->
-  <a href="mailto:cmoreira@efactornetwork.com" class="contact-button email-btn">
+  <a href="mailto:cmoreira@efactornetwork.com" class="contact-button">
     📧 cmoreira@efactornetwork.com
   </a>
 
+  <br>
+
   <!-- Botón WhatsApp -->
-  <a href="https://wa.me/34686284356" target="_blank" class="contact-button whatsapp-btn">
+  <a href="https://wa.me/34686284356" target="_blank" class="contact-button">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     +34 686 28 43 56
   </a>
