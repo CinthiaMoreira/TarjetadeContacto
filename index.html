@@ -11,11 +11,12 @@
 body {
   font-family: 'Aptos', sans-serif;
   padding: 20px;
-  background: linear-gradient(135deg, #f4f6f9, #e9eef5);
+  background: linear-gradient(135deg, #e9eef5, #f4f6f9);
   text-align: center;
   color: #333;
 }
 
+/* TARJETA */
 .card {
   max-width: 380px;
   margin: auto;
@@ -25,11 +26,13 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+/* LOGO */
 .logo {
   max-width: 200px;
   margin-bottom: 20px;
 }
 
+/* FOTO */
 .profile-photo {
   width: 140px;
   height: 140px;
@@ -46,43 +49,45 @@ h1 {
 }
 
 .subtitle {
-  margin: 0 0 25px 0;
+  margin: 0 0 30px 0;
   color: #666;
   font-size: 1em;
 }
 
-/* BOTONES 3D */
+/* BOTONES GLASS */
 .contact-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 18px;
-  margin: 10px auto;
-  border-radius: 8px;
-  background: linear-gradient(to bottom, #f2f2f2, #dcdcdc);
-  color: #000;
+  gap: 10px;
+  width: 260px;               /* mismo tamaño */
+  margin: 12px auto;
+  padding: 14px 20px;         /* un poco más grandes */
+  border-radius: 12px;
   text-decoration: none;
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 600;
-  border: 1px solid #cfcfcf;
-  box-shadow: 
-    0 4px 0 #b5b5b5,
-    0 6px 10px rgba(0,0,0,0.08);
-  transition: all 0.15s ease-in-out;
+  color: #000;
+  
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
 }
 
+/* Hover elegante */
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Iconos */
 .contact-button img {
-  width: 18px;
-  height: 18px;
-}
-
-/* Efecto al presionar */
-.contact-button:active {
-  transform: translateY(4px);
-  box-shadow: 
-    0 1px 0 #b5b5b5,
-    0 3px 6px rgba(0,0,0,0.1);
+  width: 20px;
+  height: 20px;
 }
 
 /* LinkedIn */
@@ -118,14 +123,12 @@ h1 {
   <h1>Cinthia Moreira</h1>
   <p class="subtitle">Key Account Manager</p>
 
-  <!-- Botón Email -->
+  <!-- Email -->
   <a href="mailto:cmoreira@efactornetwork.com" class="contact-button">
     📧 cmoreira@efactornetwork.com
   </a>
 
-  <br>
-
-  <!-- Botón WhatsApp -->
+  <!-- WhatsApp -->
   <a href="https://wa.me/34686284356" target="_blank" class="contact-button">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     +34 686 28 43 56
